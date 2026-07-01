@@ -6,7 +6,7 @@ services:
     rootDir: backend
     healthCheckPath: /health
     envVars:
-      - key: DATABASE_URL
+      - key: postgresql+psycopg://postgres:postgres@localhost:5432/structured_investments
         sync: false
       - key: SECRET_KEY
         sync: false
